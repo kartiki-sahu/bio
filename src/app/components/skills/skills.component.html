@@ -1,15 +1,30 @@
 <!-- <waterfall-animation></waterfall-animation> -->
 <div class="section skills-section">
-    <div class="skills-header col-sm-3 col-md-3 offset-md-1">
+    <div class="skills-header section-title col-md-12 col-xs-12 col-sm-12 col-lg-12">
         <h2>Skills</h2>
     </div>
     <div class="row">
-        <div class="col-xs-6 col-sm-3 col-md-3 offset-md-1">
+        <div class="col-xs-2 col-sm-2 col-md-2 offset-md-1">
             <!-- <div class="basic-waterfall" style="background-image: url('assets/img/7.gif'); "></div> -->
-            <img src="assets/img/skills.gif"
-                alt="skills">
+            <img src="assets/img/skills.gif" alt="skills">
         </div>
-        <div class="col-xs-6 col-sm-4 col-md-4 offset-md-1">
+        <div class="col-xs-9 col-sm-9 col-md-9 skills-content">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <progress-bar skills="javascript" growth="90"></progress-bar>                       
+                    <progress-bar skills="angular" growth="75"></progress-bar>   
+                    <progress-bar skills="jquery" growth="75"></progress-bar>   
+                    <progress-bar skills="HTML" [isTitle]="true" growth="75"></progress-bar>  
+                    <progress-bar skills="SCSS" [isTitle]="true" growth="30"></progress-bar> 
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <progress-bar skills="python" growth="25"></progress-bar>                    
+                    <progress-bar skills="react" growth="45"></progress-bar> 
+                    <progress-bar skills="twitter bootstrap" growth="70"></progress-bar>                   
+                    <progress-bar skills="CSS" [isTitle]="true" growth="70"></progress-bar>                    
+                    <progress-bar skills="LESS" [isTitle]="true" growth="30"></progress-bar>
+                </div>
+            </div>
         </div>
     </div>
 </div>

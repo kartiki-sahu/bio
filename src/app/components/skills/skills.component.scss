@@ -1,9 +1,14 @@
 .skills-section{
     // background-color: #141417;
-	// position: relative;
+	position: relative;
+	padding-top: 1px;
 	// color: white;
 
 	.row {
 		margin:0;
+	}
+
+	.skills-content{
+		padding: 0 5rem;
 	}
 }

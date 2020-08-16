@@ -1,0 +1,12 @@
+<div class="col-md-12 col-sm-12 col-xs-12 animate-box">
+    <div class="progress-wrap ftco-animate">
+        <h5 *ngIf="isTitle">{{ skills | uppercase }}</h5>
+        <h5 *ngIf="!isTitle">{{ skills | titlecase }}</h5>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" [aria-valuenow]="growth"
+                aria-valuemin="0" aria-valuemax="100"  [ngStyle]="{'width': getGrowthPer()}">
+            </div>
+        </div>
+    </div>
+    <br>
+</div>

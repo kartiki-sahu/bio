@@ -255,14 +255,19 @@
     left: 0;
     width: 250.625em;
     height: 60.75em;
-    -webkit-animation: cloudLoop 80s linear infinite;
-    animation: cloudLoop 80s linear infinite;
+    -webkit-animation: cloudLoop 50s linear infinite;
+    animation: cloudLoop 50s linear infinite;
 }
 
-@keyframes cloudLoop{   0%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
-                        100%{-webkit-transform:translate3d(-50%,0,0);
-                        transform:translate3d(-50%,0,0)}
-                    }
+@keyframes cloudLoop{   
+    0%{
+        -webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)
+    }
+    100%{
+        -webkit-transform:translate3d(-50%,0,0);
+        transform:translate3d(-50%,0,0)}
+    }
+
 .following{
     img{
         max-width: 70px;
