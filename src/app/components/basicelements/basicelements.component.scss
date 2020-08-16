@@ -1,0 +1,91 @@
+.section {
+	padding: 40px 0 !important;
+}
+
+.about-header {
+	margin-top: 30px;
+	margin-bottom: 25px;
+	min-height: 32px;
+}
+
+// .moving-waterfall{
+//     position: absolute;
+//     z-index: 1;
+//     bottom: 0;
+//     left: 0;
+//     width: 250.625em;
+//     height: 60.75em;
+//     -webkit-animation: waterfallLoop 80s linear infinite;
+//     animation: waterfallLoop 80s linear infinite;
+// }
+
+// @keyframes waterfallLoop{   0%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+//                         100%{-webkit-transform:translate3d(-50%,0,0);
+//                         transform:translate3d(-50%,0,0)}
+//                     }
+
+.about-section{
+    background-color: #5f5f5f;
+	position: relative;
+	color: white;
+
+	.row {
+		margin:0;
+	}
+
+	.about-me{
+		font-size: 22px;
+	}
+}
+
+.basic-waterfall{
+    z-index: 1;
+    position: absolute;
+    width: 35em;
+    height: 55em;
+    background-size: 100% 300%;
+	top: -86px;
+	left:25%;
+    opacity: 0.3;
+}
+
+.moving-waterfall {
+    z-index: 1;
+    position: absolute;
+    width: 80.625em;
+    height: 40.75em;
+    background-size: 100% 300%;
+    top: 0;
+    left: 13%;
+    opacity: 0.3;
+    -webkit-animation: loaderLoop 10s linear infinite;
+    animation: loaderLoop 10s linear infinite;
+
+}
+
+@-webkit-keyframes loaderLoop {
+	0% {
+		background-position: bottom;
+	}
+	100% {
+		background-position: top;
+	}
+}
+
+@-moz-keyframes loaderLoop {
+	0% {
+		background-position: bottom;
+	}
+	100% {
+		background-position: top;
+	}
+}
+
+@keyframes loaderLoop {
+	0% {
+		background-position: bottom;
+	}
+	100% {
+		background-position: top;
+	}
+}
