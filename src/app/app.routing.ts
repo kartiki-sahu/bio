@@ -5,7 +5,7 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 import { ComponentsComponent } from './components/components.component';
 
-const routes: Routes =[
+const routes: Routes = [
     { path: '', component: ComponentsComponent }
 ];
 
