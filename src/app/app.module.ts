@@ -10,12 +10,16 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
 import { ComponentsModule } from './components/components.module';
+// import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppearDirective } from './shared/Directive/appear';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    AppearDirective
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,9 @@ import { ComponentsModule } from './components/components.module';
     FormsModule,
     RouterModule,
     ComponentsModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    // AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

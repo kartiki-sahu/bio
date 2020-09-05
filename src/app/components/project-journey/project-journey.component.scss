@@ -1,3 +1,273 @@
-.project-journey{
-    background-image: url('assets/img/Road/road3.gif');
+.project-journey {
+    background-image: url("assets/img/3D Road/road.jpg");
+    background-color: #b2afab;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 9999px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    color: white;
 }
+
+.hidden{
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.road-fg {
+    padding-top: 0.2rem;
+    height: 260px;
+    perspective: 600px;
+}
+
+.card {
+    position: relative;
+    height: 90%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+    width: rem;
+    left:5rem;
+    font-size: 0.8rem;
+}
+
+.card-body{
+    padding: 0.8rem;
+}
+
+// div#project-milestone-3 {
+//     margin-top: -20rem;
+// }
+
+// Left Card
+
+// To Rotate Card
+.slideRight {
+    animation-name: tilt-right;
+    -webkit-animation-name: tilt-right;
+
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    visibility: visible !important;
+    transform: translateX(-32%) rotateY(10deg)
+}
+
+@keyframes tilt-right {
+    0% {
+        transform: translateX(0) rotateY(50deg);
+    }
+    100% {
+        transform: translateX(-32%) rotateY(10deg);
+    }
+}
+
+.card:hover{
+    z-index: 100;
+}
+
+// End of rotation style
+
+// To move card back in z-axis
+.move-away-leftward {
+    animation-name: move-away-leftward;
+    -webkit-animation-name: move-away-leftward;
+
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    transform: translateZ(-25rem) rotateY(42deg) translateY(-4rem);
+}
+
+@keyframes move-away-leftward {
+    0% {
+        transform: translateX(-32%) rotateY(10deg);
+    }
+    100% {      
+        transform: translateZ(-25rem) rotateY(42deg) translateY(-4rem);
+    }
+}
+
+.move-away-leftward-1{
+    animation-name: move-away-leftward-1;
+    -webkit-animation-name: move-away-leftward-1;
+
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    transform: translateZ(-35rem) translateX(-25rem) rotateY(34deg);
+}
+
+@keyframes move-away-leftward-1{
+    0% {
+        transform: translateX(-32%) rotateY(10deg);
+    }
+    100% {      
+        transform: translateZ(-35rem) translateX(-25rem) rotateY(34deg);
+    }
+}
+
+.move-away-leftward-2{
+    animation-name: move-away-leftward-2;
+    -webkit-animation-name: move-away-leftward-2;
+
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    transform: translateZ(-35rem) translateX(-1rem) rotateY(34deg) translateY(8rem);
+}
+
+@keyframes move-away-leftward-2{
+    0% {
+        transform: translateX(-32%) rotateY(10deg);
+    }
+    100% {      
+        transform: translateZ(-35rem) translateX(-1rem) rotateY(34deg) translateY(8rem);
+    }
+}
+
+.move-away-leftward-3{
+    animation-name: move-away-leftward-3;
+    -webkit-animation-name: move-away-leftward-3;
+
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    transform: translateZ(-35rem) translateX(-25rem) translateY(13rem) rotateY(34deg) ;
+}
+
+@keyframes move-away-leftward-3{
+    0% {
+        transform: translateX(-32%) rotateY(10deg);
+    }
+    100% {      
+        transform: translateZ(-35rem) translateX(-25rem) translateY(13rem) rotateY(34deg);
+    }
+}
+
+
+// End of left card style
+
+
+// Right Card
+// Rotate card left
+.slideLeft {
+    animation-name: tilt-left;
+    -webkit-animation-name: tilt-left;
+
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    visibility: visible !important;
+    transform: translateX(-25%) rotateY(-20deg);
+}
+
+@keyframes tilt-left {
+    0% {
+        transform: translateX(0) rotateY(20deg);
+    }
+    100% {
+        transform: translateX(-25%) rotateY(-20deg);
+    }
+}
+
+// Move right card back
+.move-away-rightward {
+    animation-name: move-away-rightward;
+    -webkit-animation-name: move-away-rightward;
+
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    transform: translateZ(-8rem) translateX(-10rem) rotateY(-40deg) translateY(-4rem);
+}
+
+@keyframes move-away-rightward {
+    0% {
+        transform: translateX(-25%) rotateY(-20deg);
+    }
+    100% {      
+        transform: translateZ(-8rem) translateX(-10rem) rotateY(-40deg) translateY(-4rem);
+    }
+}
+
+.move-away-rightward-1 {
+    animation-name: move-away-rightward-1;
+    -webkit-animation-name: move-away-rightward-1;
+
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    transform: translateZ(-18rem) translateX(13rem) rotateY(-45deg)
+}
+
+@keyframes move-away-rightward-1 {
+    0% {
+        transform: translateX(-25%) rotateY(-20deg);
+    }
+    100% {      
+        transform: translateZ(-18rem) translateX(13rem) rotateY(-45deg)
+    }
+}
+
+.move-away-rightward-2 {
+    animation-name: move-away-rightward-2;
+    -webkit-animation-name: move-away-rightward-2;
+
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    transform: translateZ(-8rem) translateX(-10rem) rotateY(-40deg) translateY(6.5rem);
+}
+
+@keyframes move-away-rightward-2 {
+    0% {
+        transform: translateX(-25%) rotateY(-20deg);
+    }
+    100% {      
+        transform: translateZ(-8rem) translateX(-10rem) rotateY(-40deg) translateY(6.5rem);
+    }
+}
+
+.row-2, .row-4{
+    margin-top: -20rem;
+}
+
+.row.row-3 {
+    margin-top: -15rem;
+}
+
