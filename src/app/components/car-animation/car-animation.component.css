@@ -1,141 +1,117 @@
-.hero{
+.hero {
     height: 100vh;
-    width:100%;
-    background-image: url(../../../assets/img/car-animation/storm-clouds.jpg);
+    width: 100%;
+    background-image: url("../../../assets/img/Road GIF/road1.gif");
     background-size: cover;
     background-position: center;
     position: relative;
     overflow-x: hidden;
 }
 
-.highway{
-    height: 200px;
-    width:700%;
-    display: block;
-    background-image: url(../../../assets/img/car-animation/car-road.jpg);
+#project-milestone-1 {
+    width: 20rem;
+}
+
+#project-milestone-2 {
+    width: 22rem;
+}
+
+#project-milestone-4, #project-milestone-7 {
+    width: 19rem;
+}
+
+#project-milestone-5 {
+    width: 26rem;
+}
+
+#project-milestone-6 {
+    width: 31rem;
+}
+
+.project-milestone{
+    height:15rem;
+    width:auto;
+    max-width: 37rem;
+}
+
+.container-1 {
+    height: 260px;
+    perspective: 600px;
+    margin-top: 1rem;
+}
+
+.container-2 {
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+}
+
+.moving-clouds {
     position: absolute;
-    bottom: 0;
-    left:0;
-    right: 0;
     z-index: 1;
+    top: 0;
+    left: 0;
+    width: 162rem;
+    height: 43.5em;
+    -webkit-animation: cloudLoop 50s linear infinite;
+    animation: cloudLoop 50s linear infinite;
+}
+
+.walker img {
+    height: -5px;
+    left: 37rem;
+    position: absolute;
+    bottom: 8rem;
+    height: 10rem;
+    z-index: 2;
+}
+
+.row-1 {
+    position: absolute;
+    /* bottom: 200px;
+    left:0;
+    right:0; */
+    display: block;
+    z-index: 5;
     background-repeat: repeat-x;
-    
+    animation: row1 30s linear infinite;
 }
 
-.highwayAnimation{
-    animation: highway 15s linear infinite;
-}
-
-@keyframes highway{
-    100%{
-        transform: translateX(-6400px);
+@keyframes row1 {
+    100% {
+        transform: translateZ(-50rem);
     }
+}
+
+.technical-journey-title {
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
 }
 
 .city{
     height: 250px;
     width: 700%;
-    /* background-image: url(../../../assets/img/car-animation/city.png); */
     position: absolute;
-    bottom: 200px;
+    top: 1rem;
     left:0;
     right:0;
     display: block;
-    z-index: 1;
-    background-repeat: repeat-x;
-    
+    z-index: 2;      
 }
 
-.cityAnimation{
+.cityAnimation {
+    background-repeat: repeat-x; 
     animation: city 30s linear infinite;
 }
 
-.city:hover {
+.cityAnimation:hover {
     animation-play-state: paused;
-}
-
-.card{
-    width:18rem;
 }
 
 @keyframes city {
     100%{
         transform: translateX(-3400px);
     }
-}
-
-.car{
-    width:400px;
-    left:50%;
-    bottom: 100px;
-    transform: translateX(-50%);
-    position: absolute;
-    z-index: 2;
-}
-
-.car img{
-    width:100%;
-    animation: car 1s linear infinite;
-}
-
-@keyframes car{
-    100%{
-        transform: translateY(-1px);
-    }
-    50%{
-        transform: translateY(1px);
-    }
-    0%{
-        transform: translateY(-1px);
-    }
-}
-
-.wheel{
-    left:50%;
-    bottom: 178px;
-    transform: translateX(-50%);
-    position: absolute;
-    z-index: 2;
-}
-
-.wheel img{
-    width:72px;
-    height: 72px;
-    animation: wheel 1s linear infinite;
-}
-
-@keyframes wheel{
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
-.back-wheel{
-    left: -165px;
-    position: absolute;
-}
-
-.front-wheel{
-    left: 80px;
-    position: absolute;
-}
-
-#project-milestone-3{
-    width:36rem;
-}
-
-#project-milestone-2{
-    width:22rem;
-}
-
-#project-milestone-4{
-    width: 19rem;
-}
-
-#project-milestone-5{
-    width: 23.5rem;
-}
-
-#project-milestone-6{
-    width:30rem;
 }

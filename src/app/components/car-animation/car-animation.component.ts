@@ -10,22 +10,16 @@ export class CarAnimationComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    $(window).scroll(function() {
-      const highwayPos = $('.highway').offset().top;
+    $(window).scroll(function () {
       const cityPos = $('.city').offset().top;
       const topOfWindow = $(window).scrollTop();
-      if (highwayPos < topOfWindow + 800) {
-        $('.highway').addClass('highwayAnimation');
-      } else {
-        $('.highway').removeClass('highwayAnimation');
-      }
 
-      if (cityPos < topOfWindow + 700) {
+      if (cityPos < topOfWindow + 850) {
         $('.city').addClass('cityAnimation');
       } else {
         $('.city').removeClass('cityAnimation');
       }
-      });
+    });
   }
 
 }
