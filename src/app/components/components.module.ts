@@ -12,7 +12,7 @@ import { WaterfallAnimationComponent } from './waterfall-animation/waterfall-ani
 import { SkillsComponent } from './skills/skills.component';
 import { ProgressBarComponent } from 'app/shared/progress-bar/progress-bar.component';
 import { ProjectJourneyComponent } from './project-journey/project-journey.component';
-import { CarAnimationComponent } from './car-animation/car-animation.component';
+import { TechnicalJourneyComponent } from './technical-journey/technical-journey.component';
 
 @NgModule({
     imports: [
@@ -30,7 +30,7 @@ import { CarAnimationComponent } from './car-animation/car-animation.component';
         SkillsComponent,
         ProgressBarComponent,
         ProjectJourneyComponent,
-        CarAnimationComponent
+        TechnicalJourneyComponent
     ],
     entryComponents: [],
     exports:[ ComponentsComponent ]

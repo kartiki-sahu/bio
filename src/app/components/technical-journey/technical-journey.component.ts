@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 @Component({
-  selector: 'app-car-animation',
-  templateUrl: './car-animation.component.html',
-  styleUrls: ['./car-animation.component.css']
+  selector: 'app-technical-journey',
+  templateUrl: './technical-journey.component.html',
+  styleUrls: ['./technical-journey.component.css']
 })
-export class CarAnimationComponent implements OnInit {
+export class TechnicalJourneyComponent implements OnInit {
 
   constructor() { }
 
@@ -21,5 +21,4 @@ export class CarAnimationComponent implements OnInit {
       }
     });
   }
-
 }
