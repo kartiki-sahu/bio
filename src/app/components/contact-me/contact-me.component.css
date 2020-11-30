@@ -1,0 +1,33 @@
+.contact-info img{
+    width:55%;
+}
+
+.contact-info-param{
+    height: 19rem;
+}
+
+.contact-form{
+    margin-top: 0;
+}
+
+.contact-container{
+    padding: 0 8rem;
+}
+
+.my-info {
+    width: 100%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(assets/img/K18.jpg);
+}
+
+.btn-primary {
+    background-color: #61a7ca;
+    border-color: #63a8cb;
+    color: #FFFFFF;
+}
+
+#message-warning, #message-success{
+    display: none;
+}

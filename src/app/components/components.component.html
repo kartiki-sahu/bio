@@ -1,32 +1,41 @@
-<div class="wrapper">
-    <div class="page-header section-dark header-section">
-        <div class="filter"></div>
-        <div class="content-center">
-            <div class="container">
-                <div class="title-brand">
-                    <span class="subheading">Hey! I am</span>
-                    <h1 class="presentation-title">Kartiki Sahu</h1>
-                    <div class="fog-low">
-                        <img src="assets/img/fog-low.png" alt="">
-                    </div>
-                    <div class="fog-low right">
-                        <img src="assets/img/fog-low.png" alt="">
-                    </div>
-                </div>                
-            </div>
-            <h2 class="presentation-subtitle text-center">I'm a
-                <span class="txt-rotate" data-period="2000"
-                    data-rotate='[ "Senior UI Developer.", "Full Stack Developer.", "Painter.", "Dancer." ]'></span>
-            </h2>
-        </div>
-    </div>
-    <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
-</div>
 <div class="main">
-    <about-me></about-me>
-    <skills></skills>
-    <!-- <project-journey></project-journey> -->
-    <app-technical-journey></app-technical-journey>
-    
-    <!-- <project-journey></project-journey> -->
+    <section class="hero-wrap js-fullheight">
+        <div class="wrapper">
+            <div class="page-header section-dark header-section">
+                <div class="filter"></div>
+                <div class="content-center">
+                    <div class="container">
+                        <div class="title-brand">
+                            <span class="subheading">Hey! I am</span>
+                            <h1 class="presentation-title">Kartiki Sahu</h1>
+                            <div class="fog-low">
+                                <img src="assets/img/fog-low.png" alt="">
+                            </div>
+                            <div class="fog-low right">
+                                <img src="assets/img/fog-low.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="presentation-subtitle text-center">I'm a
+                        <span class="txt-rotate" data-period="2000"
+                            data-rotate='[ "Senior UI Developer.", "Full Stack Developer.", "Painter.", "Dancer." ]'></span>
+                    </h2>
+                </div>
+            </div>
+            <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
+        </div>
+    </section>
+    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+        <about-me></about-me>
+    </section>
+    <section class="ftco-section ftco-no-pb goto-here" id="skills-section">
+        <skills></skills>
+    </section>
+    <section class="ftco-section ftco-no-pb goto-here" id="technical-journey-section">
+        <app-technical-journey></app-technical-journey>
+    </section>
+    <section class="ftco-section ftco-no-pb goto-here" id="contact-me-section">
+        <!-- <app-my-work></app-my-work> -->
+        <app-contact-me></app-contact-me>
+    </section>
 </div>

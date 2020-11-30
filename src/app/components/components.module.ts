@@ -11,8 +11,9 @@ import { ComponentsComponent } from './components.component';
 import { WaterfallAnimationComponent } from './waterfall-animation/waterfall-animation.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProgressBarComponent } from 'app/shared/progress-bar/progress-bar.component';
-import { ProjectJourneyComponent } from './project-journey/project-journey.component';
 import { TechnicalJourneyComponent } from './technical-journey/technical-journey.component';
+import { MyWorkComponent } from './my-work/my-work.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 @NgModule({
     imports: [
@@ -29,8 +30,9 @@ import { TechnicalJourneyComponent } from './technical-journey/technical-journey
         WaterfallAnimationComponent,
         SkillsComponent,
         ProgressBarComponent,
-        ProjectJourneyComponent,
-        TechnicalJourneyComponent
+        TechnicalJourneyComponent,
+        MyWorkComponent,
+        ContactMeComponent
     ],
     entryComponents: [],
     exports:[ ComponentsComponent ]
