@@ -10,7 +10,7 @@
     margin-top: 0;
 }
 
-.contact-container{
+.contact-container {
     padding: 0 8rem;
 }
 
@@ -30,4 +30,12 @@
 
 #message-warning, #message-success{
     display: none;
+}
+
+.section-title{
+    color:white;
+}
+
+.contact-info-param{
+    background-color: white;
 }

@@ -71,4 +71,8 @@ export class NavbarComponent implements OnInit {
             return false;
         }
     }
+    
+    onClick(event: any){
+
+    }
 }
