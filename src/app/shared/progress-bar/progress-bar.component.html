@@ -3,7 +3,7 @@
         <h5 *ngIf="isTitle">{{ skills | uppercase }}</h5>
         <h5 *ngIf="!isTitle">{{ skills | titlecase }}</h5>
         <div class="progress">
-            <div class="progress-bar" role="progressbar" [aria-valuenow]="growth"
+            <div class="progress-bar" role="progressbar"
                 aria-valuemin="0" aria-valuemax="100"  [ngStyle]="{'width': getGrowthPer()}">
             </div>
         </div>
