@@ -8,11 +8,9 @@ import { RouterModule } from '@angular/router';
 
 import { AboutComponent } from './about/about.component';
 import { ComponentsComponent } from './components.component';
-import { WaterfallAnimationComponent } from './waterfall-animation/waterfall-animation.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProgressBarComponent } from 'app/shared/progress-bar/progress-bar.component';
 import { TechnicalJourneyComponent } from './technical-journey/technical-journey.component';
-import { MyWorkComponent } from './my-work/my-work.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 
 @NgModule({
@@ -27,11 +25,9 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
     declarations: [
         ComponentsComponent,
         AboutComponent,
-        WaterfallAnimationComponent,
         SkillsComponent,
         ProgressBarComponent,
         TechnicalJourneyComponent,
-        MyWorkComponent,
         ContactMeComponent
     ],
     entryComponents: [],
