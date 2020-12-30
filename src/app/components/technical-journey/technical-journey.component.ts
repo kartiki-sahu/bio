@@ -3,7 +3,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-technical-journey',
   templateUrl: './technical-journey.component.html',
-  styleUrls: ['./technical-journey.component.css']
+  styleUrls: ['./technical-journey.component.scss']
 })
 export class TechnicalJourneyComponent implements OnInit {
 
