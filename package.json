@@ -8,12 +8,13 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "postinstall": "ng build --aot -prod"
   },
   "dependencies": {
     "@angular/animations": "^9.0.6",
@@ -29,14 +30,17 @@
     "@ng-bootstrap/ng-bootstrap": "6.0.0",
     "bootstrap": "4.1.2",
     "core-js": "3.6.4",
+    "express": "^4.17.1",
     "jquery": "3.2.1",
     "jw-bootstrap-switch-ng2": "2.0.1",
     "ng2-animate-on-scroll": "^2.0.0",
     "ng2-nouislider": "1.7.12",
     "nouislider": "9.2.0",
+    "path": "^0.12.7",
     "popper.js": "1.14.4",
     "rxjs": "6.5.4",
     "rxjs-compat": "6.5.4",
+    "typescript": "3.7.5",
     "zone.js": "0.10.2"
   },
   "devDependencies": {
@@ -47,6 +51,7 @@
     "@types/jasmine": "3.5.9",
     "@types/node": "13.9.1",
     "codelyzer": "5.2.1",
+    "enhanced-resolve": "^5.4.1",
     "jasmine-core": "3.5.0",
     "jasmine-spec-reporter": "4.2.1",
     "karma": "4.4.1",
@@ -59,5 +64,9 @@
     "ts-node": "3.0.4",
     "tslint": "6.1.0",
     "typescript": "3.7.5"
+  },
+  "engines": {
+    "node": "12.20.0",
+    "npm": "6.14.8"
   }
 }
