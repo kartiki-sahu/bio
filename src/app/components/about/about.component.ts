@@ -16,7 +16,7 @@ export class AboutComponent implements OnInit {
 
     downloadResume() {
     	var anchor=document.createElement('a');
-    	anchor.setAttribute('href','assets/resume/Kartiki_Sahu-Senior_UI_Dev-Resume.pdf');
+    	anchor.setAttribute('href','assets/resume/Kartiki-Sahu_Lead-Software-Engineer_Resume.pdf');
     	anchor.setAttribute('download','');
     	document.body.appendChild(anchor);
     	anchor.click();
