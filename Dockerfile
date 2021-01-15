@@ -17,7 +17,7 @@ RUN apk add git
 RUN npm i && mkdir /app && cp -R ./node_modules ./app
 WORKDIR /app
 COPY . .
-ARG BUILD_ENV=prod
+ARG BUILD_ENV=production
 RUN npm run build -- -c $BUILD_ENV
 
  
