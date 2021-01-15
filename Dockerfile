@@ -16,7 +16,7 @@ COPY package-lock.json .
 RUN apk add git
 WORKDIR /app
 COPY . .
-ARG BUILD_ENV=production
+ARG BUILD_ENV=prod
 RUN npm run build -- -c $BUILD_ENV
 
  
