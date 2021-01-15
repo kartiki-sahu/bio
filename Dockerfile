@@ -14,6 +14,7 @@ FROM node:12-alpine as builder
 COPY package.json .
 COPY package-lock.json .	
 RUN apk add git
+RUN npm i && mkdir /app && cp -R ./node_modules ./app
 WORKDIR /app
 COPY . .
 ARG BUILD_ENV=prod
